@@ -6,10 +6,10 @@ db:
 	container_name: mongo
 	ports:
 	  - 27017:27017
-	command: bash -c "mongo
-	         && show databases
-			 && use cinema
-			 && exit"
+#command: bash -c "mongo
+#&& show databases
+#&& use cinema
+#&& exit"
 	networks:
       - backend
 	  
