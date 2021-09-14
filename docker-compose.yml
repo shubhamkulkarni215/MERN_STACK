@@ -1,7 +1,7 @@
-version:"3"
-#services:
+ version:"3"
+ services:
 
-db:
+  db:
 	image: mongo:latest
 	container_name: mongo
 	ports:
@@ -13,7 +13,7 @@ db:
 	networks:
       - backend
 	  
-server:
+  server:
 	build: ./server
 	container_name: server
 	ports:
@@ -21,7 +21,7 @@ server:
 	networks:
     - backend
 		
-client :
+  client :
 	build: ./client
 	container_name: client
 	ports:
@@ -29,9 +29,9 @@ client :
 	networks:
     - frontend
 	
-networks:
-  frontend:
-  backend:
+ networks:
+   frontend:
+   backend:
 	
 	  
 	  
