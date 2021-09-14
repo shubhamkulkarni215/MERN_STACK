@@ -13,7 +13,7 @@ RUN CI=true
 RUN npm install
 # Copies everything over to Docker environment
 # Uses port which is used by the actual application
-EXPOSE 4000
+EXPOSE 8000
 
 # Finally runs the application
 CMD [ "npm", "start" ]
