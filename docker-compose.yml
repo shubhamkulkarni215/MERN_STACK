@@ -3,11 +3,15 @@ services:
   web-server:
     build: ./server
     container_name: server
+    volumes:
+      - .:/code
     ports:
       - "3000:3000"
   web-client:
     build: ./client
     container_name: client
+    volumes:
+      - .:/code
     ports: 
       - "8000:8000"
   db:
